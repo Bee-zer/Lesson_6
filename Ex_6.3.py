@@ -12,14 +12,18 @@ class Worker:
         self.profit = profit
         self.bonus = bonus
 
+
 class Position(Worker):
     def __init__(self, name, surname, position, profit, bonus):
         super().__init__(name, surname, position, profit, bonus)
+
     def get_full_name(self):
         return self.name + self.surname
+
     def get_full_profit(self):
         self.__income = {'profit': self.profit, 'bonus': self.bonus}
         return self.__income
+
 
 manager = Position('Ivan', 'Ivanov', 'manager', 500, 100)
 print(manager.get_full_name(), manager.get_full_profit())
