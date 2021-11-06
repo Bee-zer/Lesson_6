@@ -19,3 +19,4 @@ class TrafficLight:
 
 traffic = TrafficLight()
 traffic.running()
+
